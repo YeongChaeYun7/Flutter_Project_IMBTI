@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset('assets/images/logo.png'),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
