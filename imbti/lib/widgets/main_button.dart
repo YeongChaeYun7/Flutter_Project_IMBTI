@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:imbti/styles/app_colors.dart';
 import 'package:imbti/styles/app_text_style.dart';
@@ -25,9 +27,19 @@ class MainButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
         ),
         child: Center(
-          child: Text(
-            buttonText,
-            style: AppTextStyles.header20(color: Colors.white),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                buttonText,
+                style: AppTextStyles.header20(color: Colors.white),
+              ),
+              SizedBox(width: 10.0),
+              Icon(
+                Icons.arrow_forward,
+                color: Colors.white,
+              ),
+            ],
           ),
         ),
       ),
